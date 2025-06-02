@@ -1,0 +1,100 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.jetbrains.kotlin.android)
+}
+
+android {
+    namespace 'com.example.demo'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.demo"
+        minSdk 28
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
+
+    viewBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.appcompat
+    implementation libs.material
+    implementation libs.androidx.activity
+    implementation libs.androidx.constraintlayout
+    implementation project(':xlib')
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.junit
+    androidTestImplementation libs.androidx.espresso.core
+
+//    def activity_version = "1.10.1"
+//    implementation "androidx.activity:activity:$activity_version"
+//    implementation "androidx.activity:activity-ktx:$activity_version"
+
+    def fragment_version = "1.8.3"
+//    implementation "androidx.fragment:fragment:$fragment_version"
+    implementation "androidx.fragment:fragment-ktx:$fragment_version"
+
+    def lifecycle_version = "2.8.7"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+
+    implementation "io.github.jeremyliao:live-event-bus-x:1.8.0"
+
+    // 可选：如果需要 SavedStateHandle 支持
+//    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1"
+
+    // Guava
+    implementation "com.google.guava:guava:33.4.0-android"
+
+    implementation "androidx.fragment:fragment-ktx:1.2.0"
+    implementation "androidx.navigation:navigation-fragment-ktx:2.3.0"
+    implementation "androidx.navigation:navigation-ui-ktx:2.3.0"
+
+    implementation "com.github.vitaviva.fragivity:core:0.2.1"
+
+    // BRVAH RecyclerView
+    implementation "io.github.cymchad:BaseRecyclerViewAdapterHelper4:4.1.4"
+
+    implementation("com.google.code.gson:gson:2.12.1")
+
+    //okhttp3
+    implementation("com.squareup.okhttp3:okhttp:4.11.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
+    //retrofit2
+    api("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+    implementation("com.squareup.retrofit2:converter-scalars:2.11.0")
+
+    implementation("com.tencent:mmkv:2.1.0")
+
+    // caffeine
+    implementation("com.github.ben-manes.caffeine:caffeine:3.2.0")
+}
