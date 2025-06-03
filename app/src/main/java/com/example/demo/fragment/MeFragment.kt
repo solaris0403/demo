@@ -2,13 +2,8 @@ package com.example.demo.fragment
 
 import android.os.Bundle
 import android.view.View
-import com.example.demo.component.BaseFragment
+import com.huaxia.common.base.BaseFragment
 import com.example.demo.databinding.FragmentMeBinding
-import com.huaxia.xlib.coroutine.CoroutineHelper
-import com.example.demo.databinding.FragmentThirdBinding
-import com.github.fragivity.navigator
-import com.github.fragivity.popTo
-import com.huaxia.xlib.log.LogUtils
 
 class MeFragment: BaseFragment<FragmentMeBinding>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

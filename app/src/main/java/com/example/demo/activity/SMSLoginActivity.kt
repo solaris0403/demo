@@ -7,14 +7,11 @@ import android.text.Editable
 import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
 import com.example.demo.AppRepo
-import com.example.demo.DeviceMgr
-import com.example.demo.KeyStoreUtil
 import com.example.demo.R
 import com.example.demo.SimpleTextWatcher
-import com.example.demo.component.BaseActivity
+import com.huaxia.common.base.BaseActivity
 import com.example.demo.databinding.ActivitySmsloginBinding
 import com.example.demo.network.ApiResult
-import com.huaxia.xlib.sp.SpUtils
 import com.tencent.mmkv.MMKV
 import kotlinx.coroutines.launch
 

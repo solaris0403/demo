@@ -2,10 +2,8 @@ package com.example.demo.fragment
 
 import android.os.Bundle
 import android.view.View
-import com.example.demo.component.BaseFragment
+import com.huaxia.common.base.BaseFragment
 import com.example.demo.databinding.FragmentSecondBinding
-import com.github.fragivity.navigator
-import com.github.fragivity.push
 
 class ContactListFragment: BaseFragment<FragmentSecondBinding>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

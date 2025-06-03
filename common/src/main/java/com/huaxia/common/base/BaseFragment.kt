@@ -1,13 +1,11 @@
-package com.example.demo.component
+package com.huaxia.common.base
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
-import com.github.fragivity.navigator
 import java.lang.reflect.ParameterizedType
 
 open class BaseFragment<VB : ViewBinding> : Fragment() {

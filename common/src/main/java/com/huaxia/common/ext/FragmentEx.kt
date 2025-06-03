@@ -1,4 +1,4 @@
-package com.example.demo.ext
+package com.huaxia.common.ext
 
 import androidx.fragment.app.Fragment
 

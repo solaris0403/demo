@@ -1,4 +1,4 @@
-package com.example.demo.component
+package com.huaxia.common.base
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import androidx.viewbinding.ViewBinding
 import java.lang.reflect.ParameterizedType
 
 /**
+ * //todo
  * -keepclassmembers class * implements androidx.viewbinding.ViewBinding {
  *     public static *** inflate(android.view.LayoutInflater);
  * }

@@ -4,11 +4,8 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.viewModels
 import com.example.demo.vm.MainVM
-import com.example.demo.component.BaseFragment
+import com.huaxia.common.base.BaseFragment
 import com.example.demo.databinding.FragmentMainBinding
-import com.github.fragivity.navigator
-import com.github.fragivity.push
-import com.huaxia.xlib.log.LogUtils
 
 class ConversationListFragment: BaseFragment<FragmentMainBinding>() {
     private val viewModel: MainVM by viewModels()

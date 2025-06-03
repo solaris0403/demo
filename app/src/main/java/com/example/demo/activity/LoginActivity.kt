@@ -12,7 +12,7 @@ import com.example.demo.AppRepo
 import com.example.demo.DeviceMgr
 import com.example.demo.KeyStoreUtil
 import com.example.demo.SimpleTextWatcher
-import com.example.demo.component.BaseActivity
+import com.huaxia.common.base.BaseActivity
 import com.example.demo.databinding.ActivityLoginBinding
 import com.example.demo.network.ApiResult
 import kotlinx.coroutines.launch

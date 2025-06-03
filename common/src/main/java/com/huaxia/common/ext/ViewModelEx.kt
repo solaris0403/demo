@@ -1,4 +1,4 @@
-package com.example.demo.ext
+package com.huaxia.common.ext
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

@@ -6,7 +6,7 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
 import com.example.demo.R
-import com.example.demo.component.BaseActivity
+import com.huaxia.common.base.BaseActivity
 import com.example.demo.databinding.ActivityMainBinding
 import com.example.demo.fragment.ContactListFragment
 import com.example.demo.fragment.ConversationListFragment
