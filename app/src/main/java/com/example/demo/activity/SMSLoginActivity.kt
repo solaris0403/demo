@@ -12,7 +12,6 @@ import com.example.demo.SimpleTextWatcher
 import com.huaxia.common.base.BaseActivity
 import com.example.demo.databinding.ActivitySmsloginBinding
 import com.example.demo.network.ApiResult
-import com.tencent.mmkv.MMKV
 import kotlinx.coroutines.launch
 
 class SMSLoginActivity : BaseActivity<ActivitySmsloginBinding>() {
@@ -162,8 +161,8 @@ class SMSLoginActivity : BaseActivity<ActivitySmsloginBinding>() {
 //                KeyStoreUtil.saveData(this@SMSLoginActivity, "wf_token", token)
 //                SpUtils.getInstance().put("wf_userId", userId)
 //                SpUtils.getInstance().put("wf_token", token)
-                MMKV.defaultMMKV().putString("wf_userId", userId)
-                MMKV.defaultMMKV().putString("wf_token", token)
+//                MMKV.defaultMMKV().putString("wf_userId", userId)
+//                MMKV.defaultMMKV().putString("wf_token", token)
 
 //                token = SpUtils.getInstance().getString("wf_token")
                 //todo 需要连接IM Server

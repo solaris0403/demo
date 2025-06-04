@@ -1,5 +1,6 @@
 package com.example.demo.activity
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
@@ -10,6 +11,7 @@ import com.huaxia.common.ext.launch
 import com.huaxia.common.mmkv.MMKVUtil
 import kotlinx.coroutines.delay
 
+@SuppressLint("CustomSplashScreen")
 class LaunchActivity : BaseActivity<ActivityLaunchBinding>() {
 
     private var id: String? = ""
